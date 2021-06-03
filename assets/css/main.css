@@ -1670,3 +1670,6 @@ input, select, textarea {
     width:100%;
     position:absolute;
 }
+.video-responsive {
+  background:url(../images/loader.gif) center center no-repeat;
+}
