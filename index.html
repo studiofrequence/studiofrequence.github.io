@@ -486,16 +486,13 @@
 <script >
 var scene = $('#scene').get(0);
 var parallax = new Parallax(scene);
-var imgs = ['img1.png','img2.png','img3.png','img4.png','img5.png','img6.png','img7.png','img8.png','img9.png','img10.png','img11.png','img12.png','img13.png','img14.png','img15.png','img16.png','img17.png','img18.png','img19.png','img20.png','img21.png','img22.png','img23.png','img24.png','img25.png','img26.png','img27.png','img28.png','img29.png','img30.png','img31.png'];
 var load = document.getElementById("loading");
 function loading() 
 {
-	var num = Math.floor( Math.random() * imgs.length);
-	var img = imgs[num];
-	document.getElementById('randImage').src =  ('images/' + img);
-	var num2 = Math.floor( Math.random() * imgs.length);
-	var img2 = imgs[num2];
-	document.getElementById('randImage2').src =  ('images/' + img);
+	var num = Math.floor( Math.random() * 134);
+	document.getElementById('randImage').src =  ('images/' + num);
+	var num2 = Math.floor( Math.random() * 134h);
+	document.getElementById('randImage2').src =  ('images/' + num2);
 	load.style.display = 'none';
 }
 </script>
