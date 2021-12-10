@@ -21,7 +21,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-<body onload = "loading()">
+<body class="is-preload" onload = "loading()">
 
 <div id = "loading" class="dot-spinner-48x48"></div>
 
@@ -482,7 +482,7 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script  src="cookieRedirect.js">
+<script>
 var scene = $('#scene').get(0);
 var parallax = new Parallax(scene);
 var load = document.getElementById("loading");
