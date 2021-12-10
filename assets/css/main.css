@@ -1675,13 +1675,6 @@ input, select, textarea {
     position:absolute;
 }
 
-.imgcenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .dot-spinner-48x48 { 
 	animation: dot-spinner-48x48 1s steps(12) infinite;
 	display: block;
