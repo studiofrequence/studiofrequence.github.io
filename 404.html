@@ -20,14 +20,8 @@
 		<link rel="icon" href="images/favicon.png">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-		<script
-		  async
-		  src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@latest/dist/lazyload.min.js"
-		></script>
 </head>
-<body class="is-preload" onload = "loading()">
-
-<div id = "loading" class="dot-spinner-48x48"></div>
+<body class="is-preload">
 
 <div class='container'>
   <div data-pointer-events='true' id='scene'>
@@ -276,10 +270,8 @@
 <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script type="text/javascript">
-new LazyLoad({ elements_selector: `.lazy`});
 var scene = $('#scene').get(0);
 var parallax = new Parallax(scene);
-var load = document.getElementById("loading");
 function loading() 
 {
 	var num = Math.floor( Math.random() * 133) + 1;
@@ -288,7 +280,6 @@ function loading()
 	document.getElementById('randImage2').src =  ('images2/img' + num2 + '.png');
 	document.getElementById('randImage2').width =  "130";
 	document.getElementById('randImage2').height = "60";
-	load.style.display = 'none';
 }
 </script>
 </body>
