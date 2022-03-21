@@ -1,6 +1,16 @@
 <html>
 <head>
-		<title>StudioFrequnce</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=274607866"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', '274607866');
+		</script>
+		<!-- End Google Analytics -->
+		<title>Studio Frequence inc</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -8,8 +18,14 @@
 		<link href="assets/css/stars.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.0/dist/lazyload.min.js"></script>
 </head>
-<body class="is-preload">
+<body class="is-preload" onload = "loading()">
+
+<div id = "loading" class="dot-spinner-48x48"></div>
+
 <div class='container'>
   <div data-pointer-events='true' id='scene'>
 
@@ -79,7 +95,7 @@
       <div class='star'></div>
       <div class='star'>
 	  	<div>
-			<img src="images/img3.png" width = "60" height = "60"/>
+			<img id="randImage2"/>
 		</div>
 	  </div>
       <div class='star'></div>
@@ -91,7 +107,11 @@
       <div class='star'></div>
       <div class='star'></div>
       <div class='star'></div>
-      <div class='star'></div>
+      <div class='star'>
+	    <div>
+			<img src='images/ufo.png' width='256' height='256' />
+		</div>
+	    </div>
       <div class='star'></div>
       <div class='star'></div>
       <div class='star'></div>
@@ -195,52 +215,134 @@
       <div class='star'></div>
       <div class='star'></div>
       <div class='star'></div>
-      <div class='star'></div>
       <div class='star'>
-	  	<div>
-			<img src="images/img1.png" />
+	    <div>
+			<img style="vertical-align:middle;margin:0px -600px" id="randImage" />
 		</div>
-	  </div>
+	    </div>
+      <div class='star'></div>
     </div>
     
   </div>
 </div>
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" style="width: 100%;">
 
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
-							
+							<img src="images/favicon.png" width="100%" height="100%"/>
 						</div>
+						<ul class="icons">
+									<!--<li><li><a href="german.html" class="flag-icon flag-icon-de" title="Deutsch"></a></li>-->
+									<li><a href="index.html"  title="English">En</a></li>
+									<!--<li><li><a href="spanish.html" class="flag-icon flag-icon-es" title="Español"></a></li>-->
+									<li><a style="background-color: #085E7D;" href="#header" title="Français">Fr</a></li>
+									<!--<li><li><a href="italian.html" class="flag-icon flag-icon-it" title="Italiano"></a></li>-->
+									<!--<li><li><a href="portuguese.html" class="flag-icon flag-icon-pt" title="português"></a></li>-->
+									<!--<li><li><a href="finnish.html" class="flag-icon flag-icon-fi" title="Suomi"></a></li>-->
+									<!--<li><li><a href="turkish.html" class="flag-icon flag-icon-tr" title="Türkçe"></a></li>-->
+									<!--<li><li><a href="russian.html" class="flag-icon flag-icon-ru" title="ру́сский"></a></li>-->
+									<!--<li><li><a href="arabic.html" class="flag-icon flag-icon-sa" title="العربية"></a></li>-->
+									<!--<li><li><a href="japanese.html" class="flag-icon flag-icon-jp" title="日本語"></a></li>-->
+									<!--<li><li><a href="korean.html" class="flag-icon flag-icon-kr" title="한국어"></a></li>-->
+						</ul>
 						<div class="content">
 							<div class="inner">
 								<h1>Next Star System</h1>
 								<div class="video-responsive">
-									<iframe width="800" height="450" src="https://www.youtube.com/embed/4H4TUkaE1kM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
-								</div>
-								<div class = "content" style="width:100%;height:10px;border:0px solid #000;"></div>
-								<div id = "container" class = "icons"> 
-									<a id="apple-appstore-link" href="#header">
+<!-- 									<iframe class="lazy" width="1920" height="1080" data-src="https://youtu.be/pdxkbJt-LFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" ></iframe> -->
+									<iframe class="lazy" width="560" height="315" src="https://www.youtube.com/embed/5T13D2376qU" title="Next Star System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>								</div>
+								<div style="width:100%;height:10px;border:0px solid #000;"></div>
+								<div class = "icons"> 
+									<a id="apple-appstore-link" href="https://apps.apple.com/ca/app/next-star-system/id1571575924">
 										<img src="images/apple-appstore-badge.png" width = "230" height = "68">
 									</a>
 								</div>
-								<div class = "content" style="width:100%;height:20px;border:0px solid #000;"></div>
-								<h3>Join the discussion</h3>
+								<div style="width:100%;height:20px;border:0px solid #000;"></div>
+								<h3>Rejoignez la conversation</h3>
 								<div >
 									<ul class="icons">
-										<li><a href="https://www.facebook.com/gaming/NextStarSystem" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									    <li><a href="https://twitter.com/nextstarsystem" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									    <li><a href="https://instagram.com/nextstarsystem" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://www.youtube.com/channel/UC0JrlQ8j2CJ5OfAjX9aqiaQ" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-									    <li><a href="https://www.reddit.com/r/NextStarSystem" class="icon brands fa-reddit"><span class="label">Reddit</span></a></li>
-										<li><a href="https://www.twitch.tv/nextstarsystem" class="icon brands fa-twitch"><span class="label">Twitch</span></a></li>
-										<li><a href="https://discord.gg/FAcV3D5abS" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+										<li><a href="https://www.facebook.com/gaming/NextStarSystem" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									    <li><a href="https://twitter.com/nextstarsystem" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									    <li><a href="https://instagram.com/nextstarsystem" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.youtube.com/channel/UC0JrlQ8j2CJ5OfAjX9aqiaQ" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+									    <li><a href="https://www.reddit.com/r/NextStarSystem" target="_blank" rel="noopener noreferrer" class="icon brands fa-reddit"><span class="label">Reddit</span></a></li>
+										<li><a href="https://www.twitch.tv/nextstarsystem" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitch"><span class="label">Twitch</span></a></li>
+										<li><a href="https://discord.gg/FAcV3D5abS" target="_blank" rel="noopener noreferrer" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
 									</ul>
 								</div>
 							</div>
+							
 						</div>
+						<div style = "width: 5%; float: left;"></div>
+						<div style = "width: 90%; float: left;">
+							<h2> Comment jouer au Next Star System?</h2>
+							<ul>
+									<li> 
+										<p style="font-size:80%; text-align:left;">Next Star System est un jeu de combat de robots. Vous utiliserez votre puissant télescope pour parcourir les étoiles à la recherche de nouveaux mondes extraterrestres, puis vous rassemblerez une équipe de robots dotés de capacités uniques pour partir en mission ! <br/>
+										Dans Next Star System, votre objectif est de collecter plus de trésors que votre ennemi avant que le temps ne soit écoulé. Pour collecter un trésor, vous devez le transporter vers votre base à la surface de la planète. Pour gagner la partie, vous devez utiliser le bon robot au bon moment, construire des combinaisons stratégiques avec vos robots et empêcher votre adversaire de collecter des trésors.  
+  
+
+										</p>
+										<img src="images3/bases.png" style='width:100%; max-width:1000px;' border="0" alt="bases" />
+										<p> <br/></p>
+										<p style="font-size:80%; text-align:left;">
+											• Au fur et à mesure de votre progression dans la galaxie, vous débloquerez plus de télescopes et les ferez évoluer avec vos robots pour agrandir votre royaume dans la galaxie. Si vous venez de commencer à jouer, notre vidéo de jouabilité pourrait vous être utile. Vous pouvez passer à notre section de conseils, d’astuces et de stratégies pour débutants afin de connaître les meilleurs moyens de vaincre les autres joueurs dans les matchs PvP
+										</p>
+									</li>
+									
+									<br/>
+									<li>
+										<p style="font-size:80%; text-align:left;">
+											• Connaître les capacités et les pouvoirs de chaque robot vous permet non seulement d’utiliser leurs pouvoirs au bon moment, mais aussi de leur attribuer des positions appropriées. Sur la page des cartes, touchez la carte de chacun de vos robots pour connaître leurs capacités. La carte d’un robot affiche également diverses caractéristiques, par exemple l’endurance, la masse, la puissance de tir, etc.  
+										</p>
+										<img src="images3/drill.png" style='width:100%;max-width:1000px;' border="0" alt="Drill" />
+									</li>
+									
+									<p> <br/></p>
+									<li>
+										<p style="font-size:80%; text-align:left;">
+											•  Il y a trois types de robots : les premiers ne se soucient que des trésors, les deuxièmes que des robots ennemis, et les derniers, des deux à la fois. Utilisez une combinaison de robots pour collecter des trésors et empêcher votre ennemi de faire de même.
+										</p>
+									</li>
+									
+									<br/>
+									<li>
+										<p style="font-size:80%; text-align:left;">
+											•  Votre équipe contient une file de huit robots. Pendant un match, quatre d’entre eux peuvent être utilisés à tout moment. Cependant, dès que vous utilisez un robot, celui qui suit entre en jeu. L’utilisation de vos robots nécessite une certaine quantité d’énergie. Votre barre d’énergie indique la quantité qu’il vous reste. Vous commencez un match avec 5 points d’énergie et gagnez 1 point toutes les secondes. La gestion de l’énergie est une partie essentielle du jeu : si vous la dépensez rapidement, vous ne pouvez pas placer de nouveaux robots sur le terrain jusqu’à ce qu’elle se régénère. En règle générale, plus un robot est puissant, plus il consomme d’énergie.
+										</p>
+										<img src="images3/team.png" style='width:100%;max-width:1000px;' border="0" alt="Team" />
+									</li>
+									
+									<p> <br/></p>
+									<li>
+										<p style="font-size:80%; text-align:left;">
+											•  Apprendre à manier la fronde est crucial pour gagner. Gardez toujours votre pouce gauche sur la manette et utilisez votre pouce droit pour lancer les robots. Vous pouvez faire glisser votre pouce droit dans n’importe quelle direction pour ajuster l’angle de lancement.
+										</p>
+										<img src="images3/hold.png" style='width:100%;max-width:1000px;' border="0" alt="Hold" />
+									</li>
+									
+									<p> <br/></p>
+									<li>
+										<p style="font-size:80%; text-align:left;">
+											•  Les pôles sont des endroits mystérieux. Lorsque vous êtes piégé dans les pôles, ne sous-estimez pas le pouvoir des explosifs.  
+										</p>
+										<img src="images3/pole.png" style='width:100%;max-width:1000px;' border="0" alt="Pole" />
+									</li>
+									
+									<p> <br/></p>
+									<li>
+										<p style="font-size:80%; text-align:left;">
+											•  Faites évoluer vos robots pour continuer à gagner des trophées et à faire progresser votre télescope. Vous allez rencontrer des adversaires de plus en plus redoutables. En faisant évoluer vos robots, vous augmenterez vos chances de gagner. 
+										</p>
+									</li>
+									
+									
+							</ul>
+						</div>
+						<div style = "width: 5%; float: right;"></div>
+						
 						<nav>
 							<ul>
 								<!--<li><a href="#contact">Contact us</a></li>-->
@@ -250,32 +352,24 @@
 								
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
-						</nav>
-						<ul class="icons">
-									<!--<li><li><a href="german.html" class="flag-icon flag-icon-de" title="Deutsch"></a></li>-->
-									<li><a href="index.html"  class="flag-icon flag-icon-us" title="English"></a></li>
-									<!--<li><li><a href="spanish.html" class="flag-icon flag-icon-es" title="Español"></a></li>-->
-									<li><li><a href="#header" class="flag-icon flag-icon-fr" title="Français"></a></li>
-									<!--<li><li><a href="italian.html" class="flag-icon flag-icon-it" title="Italiano"></a></li>-->
-									<!--<li><li><a href="portuguese.html" class="flag-icon flag-icon-pt" title="português"></a></li>-->
-									<!--<li><li><a href="finnish.html" class="flag-icon flag-icon-fi" title="Suomi"></a></li>-->
-									<!--<li><li><a href="turkish.html" class="flag-icon flag-icon-tr" title="Türkçe"></a></li>-->
-									<!--<li><li><a href="russian.html" class="flag-icon flag-icon-ru" title="ру́сский"></a></li>-->
-									<!--<li><li><a href="arabic.html" class="flag-icon flag-icon-sa" title="العربية"></a></li>-->
-									<!--<li><li><a href="japanese.html" class="flag-icon flag-icon-jp" title="日本語"></a></li>-->
-									<!--<li><li><a href="korean.html" class="flag-icon flag-icon-kr" title="한국어"></a></li>-->
-								</ul>	
+						</nav>	
 					</header>
 
 				<!-- Main -->
 					<div id="main">
-
+							<article id="ComingSoon">
+								<h2 class="major">Coming Soon!</h2>
+								<span class="image main"><img src="images/img4.png" alt="" /></span>
+							</article>
+								
 						<!-- PrivacyPolicy -->
 							<article id="PrivacyPolicy">
 								<h2 class="major">Privacy Policy</h2>
-								<h4>Effective Date: January 1st, 2021</h4>
-								<p>Thank you for playing NextStar! This Privacy Policy describes The ways we collect personal data about you and why we do so, How we use your personal data and The choices you have about your personal data.<br/>
-								    By installing "NextStar" you understand and consent to this Privacy Policy.</p>
+								<h4>EFFECTIVE DATE: JANUARY 1ST, 2022</h4>
+								<p>Thank you for playing our games. <br/>
+								This Privacy Policy describes the ways we collect personal data about you and why we do so, how we use your personal data, and the choices you have about your personal data. 
+								This Privacy Policy applies to Studio Frequence Inc services including our websites, our games, mobile applications, software and any other related content and services collectively called as the “Services”. By using any of our services (the Service) you understand and consent to this Privacy Policy.<br/>
+								    If you do not want Studio Frequence Inc to collect, store, use or share your information as described in this Privacy Policy, you may not be able to play our games or use the Services.</p>
 								
 								<ul>
 									<li> 
@@ -285,6 +379,7 @@
 												<li><a href="#How_We_Use_The_Information">How We Use The Information We Collect</a></li>
 												<li><a href="#Data_Retention">Data Retention</a></li>
 												<li><a href="#Children_Privacy">Children's Privacy</a></li>
+												<li><a href="#Who_can_see_yourdata">Who Can See Your Data</a></li>
 												<li><a href="#Advertising">Advertising</a></li>
 												<li><a href="#Analytics">Analytics</a></li>
 												<li><a href="#Security_of_Data">Security of Data</a></li>
@@ -305,25 +400,32 @@
 											<p style="font-size:90%;">
 											- contact information (such as email) <br/>
 											- player name <br/>
-											- any other data you provide. <br/>
+											- Profile information (such as profile photo) <br/>
+											- Your messages to the Services (such as chat logs and player support tickets)<br/>
+											- Any other data you choose to give us (such as data to identify a lost account)<br/>
 											</p>
 										</ul>
 									
 										<li>Information Collected Automatically </li>
 										<ul> 
 											<p style="font-size:90%;">
+											- Data about your account if you have a registered account with us<br/>
 											- Game version <br/>
 											- A random game ID per game <br/>
 											- user location (eg. what country you are from).<br/>
 											- Usage Information: including levels completed, game scores, time spent playing game, and other game play information..<br/>
 											- Hardware Information: We collect information about device you use to play the game, including the hardware model, operating system and version, browser  mobile network information, list of other BNEI mobile applications installed on the device, MAC address, IP address International Mobile Equipment Identity (“IMEI”) number and other unique device identifiers made available by the operating system of your device.<br/>
+											Data we collect with cookies and similar technologies.<br/>
 											</p>
 										</ul>
 										
-										<li>Information Received Through Your Third Party Platform Account</li>
+										<li>Information Received from Third Party Platform and Partners (advertisers, other publishers, distributors, billing partners, ad network providers)</li>
 										<ul> 
 											<p style="font-size:90%;">
-											- Data we receive if you link a third party tool with the Game. (such as Facebook or Google).<br/>
+											- Data we receive if you link a third-party tool with the Services (such as Apple, Facebook, or Google).<br/>
+											- Information from billing and distribution partners if you subscribe to certain games or make in-game purchases.<br/>
+											- Data for advertising and analytics purposes to provide you with better Services<br/>
+											- Information (such as IPs, Device IDs) we may receive from other partners, which we use to place or send you advertising.
 											</p>
 										</ul>
 									</ul>
@@ -333,15 +435,18 @@
 								<ul> 
 									<ul> 
 											<p style="font-size:90%;">
-											- Create an account and allow you to play the game. <br/>
+											- Operate, update, improve and optimize the Services. <br/>
+											- Create an account and enable you to play our games and use the Services.<br/>
 											- Trouble-shooting errors or issues.<br/>
 											- Verify and confirm payments. <br/>
 											- Tracking purchases and usage information. <br/>
-											- Develop and improve the Game and player experience. <br/>
-											- Take action against fraudulent or misbehaving players. <br/>
-											- To analyze, profile, and segment. <br/>
-											- Send you technical notices, updates, security alerts and support. <br/>
-											- Detect, investigate and/or prevent fraudulent, unauthorized or illegal activity. <br/>
+											- Customize and improve the Services and the user experience.<br/>
+											- Detect, investigate, prevent, and take action against unauthorized, fraudulent, or misbehaving players. <br/>
+											- Analyze, profile, and segment all collected data<br/>
+											- Manage our relationship with you and enforce our Terms of Service. <br/>
+											- Send you service-related communication and enable you to communicate with other players.<br/>
+											- Send you technical notices, updates, security alerts, and support and respond to player inquiries. <br/>
+											- Deliver advertising and marketing and promotional information. <br/>
 											</p>
 									</ul>
 								</ul>
@@ -349,7 +454,8 @@
 								<li id="Data_Retention">Data Retention</li>
 								<ul> 
 											<p style="font-size:90%;">
-											We retain your data for as long as your account is active or as needed to provide you the Service. We will for example periodically de-identify unused game accounts and we regularly review and de-identify unnecessary data.<br/>Note that if you ask us to remove your personal data, we will retain your data as necessary for our legitimate business interests, such as to comply with our legal obligations, resolve disputes, and enforce our agreements.
+											We retain, use, and store your personal data for as long as needed to provide the Services and for the period necessary to fulfill all the purposes described in this Privacy Policy, unless we are required by law to delete or if we accept your request to delete your information. We will for example periodically de-identify unused game accounts and we regularly review and de-identify unnecessary data.<br/>
+											Note that if you ask us to remove your personal data, we will retain your data as necessary for our legitimate business interests, such as to comply with our legal obligations, resolve disputes, and enforce our agreements.
 											</p>
 								</ul>
 								
@@ -357,6 +463,18 @@
 								<ul> 
 											<p style="font-size:90%;">
 											We are in compliance with the requirements of COPPA (Childrens Online Privacy Protection Act) and we do not collect any information from anyone under 13 years of age. Under no circumstance persons under the age of 13 may use NextStar. In the event that we learn that we have collected personal information from a child under 13 years of age, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 13 years of age, please contact us.
+											</p>
+								</ul>
+								
+								<li id="Who_can_see_yourdata">Who Can See Your Data</li>
+								<ul> 
+											<p style="font-size:90%;">
+											- Other users and players:
+												Social features are a component of our games. Other players and users may, for example, see your profile data, score, level, and in-game activities.<br/>
+											- Public Authorities:
+												In order to investigate or take action to counter illegal activity, suspected abuse or unauthorized use of the Services, or to protect the property or safety of others, we may disclose your information with public authorities if required by any law or court order worldwide.<br/>
+											- Partners and Third-Party Service Providers:
+												We may share the data that we collect with partners and third-party service providers for the purpose of enabling them to perform services on our behalf, including, but not limited to payment processing, data storage, data management, hosting and server providers, customer service, crash reporting, user interface, tools, and utilities, push notifications, marketing or advertising providers, professional advisors, and user authentication.
 											</p>
 								</ul>
 								
@@ -433,16 +551,203 @@
 						<!-- TermsOfService -->
 							<article id="TermsOfService">
 								<h2 class="major">Terms Of Service</h2>
-								<span class="image main"><img src="images/img4.png" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p>Welcome to Studio Frequence Inc website and thank you for using our services.<br/>
+								    This agreement ("Terms of Service") is a legal agreement that its terms govern the relationship between you and Studio Frequence Inc, a Canadian company, related to any use of our services, including our websites, our games, mobile applications, software, and any other related content and services collectively called as the "Services". Studio Frequence Privacy Policy and Terms of Service which are incorporated herein by reference, govern the use of the Services.</p>
+								
+								<ul>
+									<li> 
+										<h4> Table of contents:</h4>
+											<ul>
+												<li><a href="#Agreement_to_Terms">Agreement to Terms</a></li>
+												<li><a href="#Changes_to_Terms_or_Services">Changes to Terms or Services</a></li>
+												<li><a href="#USE_LICENSE">USE LICENSE</a></li>
+												<li><a href="#Account">Account</a></li>
+												<li><a href="#Privacy_policy">Privacy policy</a></li>
+												<li><a href="#License_Limitation">License Limitation</a></li>
+												<li><a href="#Intellectual_Property_Rights_and_copyright">Intellectual Property Rights and copyright</a></li>
+												<li><a href="#User_Content_and_Links_to_Third_Party_Websites_or_Resources">User Content and Links to Third-Party Websites or Resources</a></li>
+												<li><a href="#Payment_Terms">Payment Terms</a></li>
+												<li><a href="#Termination">Termination</a></li>
+												<li><a href="#Dispute_Resolution">Dispute Resolution</a></li>
+												<li><a href="#Governing_Law_and_Venue">Governing Law and Venue</a></li>
+												<li><a href="#Warranty_Disclaimers">Warranty Disclaimers</a></li>
+												<li><a href="#Liability_limitation">Liability limitation</a></li>
+												<li><a href="#Indemnity">Indemnity</a></li>
+												<li><a href="#No_Wavier">No Wavier</a></li>
+												<li><a href="#Severability">Severability</a></li>
+											</ul>
+									</li>
+								</ul>
+								
+								<li id="Agreement_to_Terms">Agreement to Terms</li>
+								<ul> 
+									<ul>
+										<li>To use or access to our services, you must acknowledge that you have read these Terms of Service and our Privacy Policy and accept these policies, and agree that you are legally bound by their terms. If you do not agree with this Terms of Service and our Privacy Policy, please do not use the Services. </li>
+									</ul>
+								</ul>
+								
+								<li id="Changes_to_Terms_or_Services">Changes to Terms or Services</li>
+								<ul> 
+									<ul>
+										<li>Studio Frequence Inc reserves the right to change, modify or update this Terms of Service and its Privacy Policy, and the revised Terms of Service and Privacy policy will apply prospectively. Therefore it is advised you review this page for changes routinely. It is important to read and review these policies whenever we revise them because by continuing use of the Services after posting the modified Terms of Service and Privacy Policy, you will be considered to have accepted the modified Terms of Service and Privacy Policy. If you don't agree with the revised policies, you must stop using the Services immediately, and your license to use the Services shall terminate immediately.<br/>
+										We are evolving our Services over time, and they can be changed, modified, and be partially or fully discontinued at any time without notice at our sole discretion.
+										Studio Frequence Inc may find it necessary to update or reset some parameters to balance gameplay and use of the Services. These updates or "resets" may cause you setbacks within the relevant game or may affect characters, in-game currency, groups, or other entitlements that you control. Studio Frequence Inc reserves the right to make these updates and is not liable to you for these changes. </li>
+									</ul>
+								</ul>
+								
+								<li id="USE_LICENSE">USE LICENSE</li>
+								<ul> 
+									<ul>
+										<li>Subject to the terms of this agreement, Studio Frequence Inc grants you a limited, non-exclusive, non-transferable, non-sub-licensable, and revocable license to access and use the Services only for your personal, non-commercial entertainment purposes on devices owned or otherwise controlled by you. You agree not to use the Service for any other purpose.<br/>
+										You shall not access or use the Services if you are age 13 or younger. If you are between the ages of 18 or under the age of majority based on the country or the region where you live, you represent that your parents or legal guardian has read, reviewed, and agreed to the terms of this agreement.<br/>
+										You shall not access or use the services if you are not allowed to access and use the services or are barred from using the Services under applicable law. </li>
+									</ul>
+								</ul>
+								<li id="Account">Account</li>
+								<ul> 
+									<ul>
+										<li>To access Studio Frequence games, you may need to create an account that will be separate from any account you may have with any service provider and app stores. You may be able to create your game account by using a third-party account (such as Facebook, Apple, and Google but not limited to) that we may access certain personal information such as your name and email address which these third parties provide us, to help create your account to access the game. More details about the use of the information provided to us by these third parties at our Privacy policy in this <a href="#PrivacyPolicy">link</a>.</li>
+										<ul> 
+											<p style="font-size:90%;">
+											- You shall use your account only for non-commercial purposes.<br/>
+											- You agree that the information you used to create an account is accurate, complete, and up to date.<br/>
+											- You are not allowed to create an account for someone else or use anyone else information other than yourself to create an account.<br/>
+											- You are not allowed to sell, lease, share, rent, and give away your account, purchase an account or use anyone else account to access the Services.<br/>
+											- Once you have created an account, you are solely responsible for all uses of the account, including purchases, whether or not authorized by you.<br/>
+											- Studio Frequence Inc reserve the right to remove or ban access to your account in case of any use which doesn't follow the terms of this agreement or violates any form of the third party's rights.<br/>
+											- Notwithstanding any other provision herein, you acknowledge and agree that you have no ownership or other proprietary interest in the account, and you further acknowledge and agree that all rights in and to the account are owned or will remain the property of Studio Frequence Inc.<br/>
+											</p>
+										</ul>
+									</ul>
+								</ul>
+								
+								<li id="Privacy_policy">Privacy policy</li>
+								<ul> 
+									<ul>
+										<li>For more information about how we collect, use, and disclose information from you, your computer, and mobile devices, please see our Privacy Policy at <a href="#PrivacyPolicy">Privacy Policy</a> . You understand that by using our services, you consent to the collection, use, and sharing of this information in accordance with our Privacy Policy. You must cease using our Services immediately if you do not agree with our Privacy Policy.</li>
+									</ul>
+								</ul>
+
+								<li id="License_Limitation">License Limitation</li>
+								<ul> 
+									<ul>
+										<li>As a user, you agree and undertake to use the Services only for lawful purposes. You agree that by or in using the Services, in any circumstances, you will not participate, engage, encourage, or promote in any prohibited activities including but not limited to:</li>
+										<ul> 
+											<p style="font-size:90%;">
+												- Activities that violate any applicable law, rule, or regulation.<br/>
+												- Any activities that deem to be in conflict with the spirit or intent of the Services.<br/>
+												- Produce, transmit, share, collect or facilitate distribution of any content or use of the Services (directly or indirectly) with is considered (or deemed to be) illegal, harmful, hateful, abusive, racially, or ethnically offensive, vulgar, sexually explicit, defamatory, infringing, violate personal privacy or publicity rights or even objectionable to another person or user.<br/>
+												- Participate (directly or indirectly) or take advantage of any cheat, exploit, automation software, bot, hack, mods, or any other unauthorized software designed to modify or interfere with the Services.<br/>
+												- Attempt to access, collect or share any form of private information including Login Information, Login credentials, personally identifiable information, identification documents, financial information, or any other personal information from other users, Studio Frequence Inc, any service provider or third parties.<br/>
+												- Attempts or act to modify or cause to be modified any part of the Service without express written consent from Studio Frequence Inc.<br/>
+												- Attempt to disrupt or interfere with that may adversely affect the normal use of the services or negatively impact the access to or experience of using the services for other users.<br/>
+												- Any attempt to take advantage of the error in the Services, overburdening servers or computers connected to or used to offer or support the services, distribution of a virus or any other act that may (directly or indirectly) have a negative impact on the use of the Services or other users experience of using the Services.<br/>
+												- Any attempt or act to gain access or facilitate to gain access to unauthorized Services, account registered to the others, computers, servers, networks, software, any device that is a part of the Service or used by the services.<br/>
+												- Any attempt to make available through the Service any material or information that infringes any patent, trademark, trade secret, copyright, right of publicity or other intellectual property, proprietary or other rights of any person, entity, or third-party.<br/>
+												- Any attempt to modify, translate, adapt, or otherwise create derivative works or improvements, whether or not patentable, of the Services.<br/>
+												- Any attempt to reverse engineer, disassemble, decompile, decode, decipher, or otherwise attempt to derive or gain access to the source code of or any part of the Services or other intellectual property.<br/>
+											</p>
+										</ul>
+										<li>These limitations are not meant to be exhaustive, and Studio Frequence Inc reserves the right to determine what conduct considers to be in violation of the rules of use or otherwise outside the spirit of these Terms of Service or the Service itself. Studio Frequence Inc reserves the right to take action as a result which may include terminating your account and prohibiting you from using the Services in whole or in part.</li>
+									</ul>
+								</ul>
+								
+								<li id="Intellectual_Property_Rights_and_copyright">Intellectual Property Rights and copyright</li>
+								<ul> 
+									<ul>
+										<li>We and our licensors maintain all rights, titles, and interests in the Services, including but not limited to our games, titles, computer code, themes, objects, characters, character names, stories, dialogue, catchphrases, concepts, artwork, animations, sounds, musical compositions, audio-visual effects, methods of operation, moral rights, documentation, in-game chat transcripts, character profile information, recordings of games played using one of our games, the technology, and software used to provide the Services, except for the restricted license granted herein.<br/>
+										You agree that any comment, suggestion, or feedback in any form, about or in connection with the Services (collectively called as feedback), provided to Studio Frequence Inc, shall be the exclusive property of Studio Frequence Inc. You assign all rights, title, and proprietary interest in and to such Feedback to Studio Frequence Inc. You agree that, unless legally prohibited, Studio Frequence Inc may use, sell, disclose, and exploit the Feedback in any way and for any purposes, without restriction and without compensation to you.<br/>
+										Studio Frequence Inc owns, has licensed, or otherwise has rights to use all the content that appears in the Services including but not limited to the virtual in-game items, certain in-game benefits or currency appearing or originating in any of our games, whether earned in a game or purchased from (collectively called as Virtual goods). These Virtual Goods have no real-world value and cannot be redeemed for actual currency, goods, or other items of monetary value.<br/>
+										We respect the intellectual property rights of others and expect our users to do the same. We reserve the right to terminate the access and use of the Services without any notification for any user who repeatedly infringes or is believed to be repeatedly infringing the intellectual property rights of others. </li>
+									</ul>
+								</ul>
+								
+								<li id="User_Content_and_Links_to_Third_Party_Websites_or_Resources">User Content and Links to Third-Party Websites or Resources</li>
+								<ul> 
+									<ul>
+										<li>The Service may contain links to websites, resources, or content provided by third parties and other users within the Services. We inform you that we do not have any editorial control over the content (including user content) published by such third parties and users. Any form of content, advertisement, services, and products displayed, published, offered, expressed, or provided by third parties (including user content) belong to their respective authors or distributors, not Studio Frequence Inc or its affiliates or their any officer, director, employee, or agent.<br/>
+										We reserve the right to filter or reject user content and other content posted by third parties, we will review user content and other third-party content in a limited gatekeeper manner, and we are not obliged to investigate whether user content and other third-party content violates any terms of this agreement, and in most cases will not do so. We neither endorse nor take responsibility for user content and other third-party content. </li>
+									</ul>
+								</ul>
+								
+								<li id="Payment_Terms">Payment Terms</li>
+								<ul> 
+									<p style="font-size:90%;">
+									- You may purchase with real money or may earn or redeem some Virtual Goods via gameplay. When you obtain such Virtual Goods, you receive a limited, personal, non-transferable, non-sublicensable, and revocable license to use only in the game and solely for non-commercial use.<br/>
+									- All purchases or grants of Virtual Goods are final, and they cannot be transferred, refunded, returned, replaced, or exchanged for any sum of money, monetary value, or virtual currency at any time, except in our sole and absolute direction.<br/>
+									- You agree to pay all fees and applicable taxes incurred using an account registered to you.<br/>
+									- Payment will be charged to your account at the confirmation of purchase or at the end of the trial period of purchase if it's offered.<br/>
+									- The price of all virtual goods is subject to change without notification. We don't offer price protection, and you are not entitled to retroactive discounts or refunds for any previous purchases in case of a price reduction or promotional offering.<br/>
+									- Studio Frequence Inc may offer subscription-based Services. By purchasing a subscription, you agree to pay all subscription fees quoted at the time of purchase, including all applicable taxes. If you choose a recurring subscription plan, you acknowledge and agree that payments will be processed automatically until you cancel the subscription or your account. For subscription Services purchased in our games on a platform such as Apple or Google, the applicable platform will charge you for the subscription fee, and the platform's payment terms will apply. Cancellation of the current active subscription is not allowed.<br/>
+									- Studio Frequence Inc may offer a free trial for a subscription which will be free of charge for a certain period of time from activation, specified in the relevant trial offer. You have the right to cancel the subscription at any time during the trial period until at least 24 hours prior to the end of the trial period, and if you do not do so, the trial subscription will automatically convert into a paid subscription.<br/>
+									</p>
+								</ul>
+								
+								<li id="Termination">Termination</li>
+								<ul> 
+									<ul>
+										<li>We may, in our sole discretion, terminate access to and use of the Services at any time, with no liability or notice to you. If the Services or your account is terminated, discontinued, canceled, suspended, or deleted, all provisions of this agreement which by their nature should survive will survive, including but not limited to ownership provisions, warranty disclaimers, liability limitations, indemnity, and dispute resolution provisions. Upon terminating access to and use of the Services, the rights granted to you will automatically terminate, you may no longer exercise any of those rights.</li>
+									</ul>
+								</ul>
+
+								<li id="Dispute_Resolution">Dispute Resolution</li>
+								<ul> 
+									<ul>
+										<li>In any case related to access or use of the Services, if a dispute arises, we strongly encourage you to first contact us directly to seek a resolution. You may find a resolution by clicking on "Support us" or "contact" in the Services. If you couldn't find any resolution on the Services, first contact the support team directly by emailing contact[at]studiofrequence.com before initiating any arbitration or legal suit to resolve the dispute.</li>
+									</ul>
+								</ul>
+
+								<li id="Governing_Law_and_Venue">Governing Law and Venue</li>
+								<ul> 
+									<ul>
+										<li>This agreement is governed by and construed in accordance with the laws of Canada without giving effect to any choice or conflict of law provision or rule. Any legal suit, action, or proceeding arising out of or related to this agreement or use of the Services shall be instituted exclusively in the provincial courts of Quebec or the federal courts of Canada. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.</li>
+									</ul>
+								</ul>
+								
+								<li id="Warranty_Disclaimers">Warranty Disclaimers</li>
+								<ul> 
+									<ul>
+										<li>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICES AND CONTENT ARE PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, STUDIO FREQUENCE INC EXPLICITLY DISCLAIMS ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, AND NON-INFRINGEMENT. STUDIO FREQUENCE INC MAKES NO WARRANTY THAT THE SERVICES WILL MEET YOUR REQUIREMENTS OR BE AVAILABLE ON AN UNINTERRUPTED, SECURE, VIRUS-FREE, OR ERROR-FREE BASIS. WE MAKE NO WARRANTY REGARDING THE QUALITY, ACCURACY, TIMELINESS, TRUTHFULNESS, COMPLETENESS, OR RELIABILITY OF THE SERVICES.</li>
+									</ul>
+								</ul>
+								
+								<li id="Liability_limitation">Liability limitation</li>
+								<ul> 
+									<ul>
+										<li> TO THE MAXIMUM EXTENT PERMISSIBLE UNDER APPLICABLE LAWS, STUDIO FREQUENCE INC SHALL NOT BE LIABLE IN ANY WAY FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE, OR OTHER SIMILAR DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF REVENUES, LOST PROFITS, LOST DATA, OR BUSINESS INTERRUPTION OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR THE SERVICES ITSELF, OR THE DELAY OR INABILITY TO USE OR LACK OF FUNCTIONALITY OF THE SERVICES, EVEN IN THE EVENT OF ONE OF A STUDIO FREQUENCE INC PARTY'S FAULT, TORT, NEGLIGENCE, STRICT LIABILITY, INDEMNITY, PRODUCT LIABILITY, BREACH OF CONTRACT, BREACH OF WARRANTY, WHETHER OR NOT A STUDIO FREQUENCE INC PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br/>
+										TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW, THE TOTAL LIABILITY OF STUDIO FREQUENCE INC IS LIMITED TO THE TOTAL AMOUNT YOU HAVE PAID TO STUDIO FREQUENCE INC IN ACCORDANCE WITH THESE TERMS OF SERVICE IN THE SIX (6) MONTHS PERIOD IMMEDIATELY PRECEDING THE DATE ON WHICH YOU FIRST ASSERT ANY SUCH CLAIM. YOU ACKNOWLEDGE AND AGREE THAT IF YOU HAVE NOT PAID STUDIO FREQUENCE INC ANY AMOUNT DURING SUCH PERIOD, YOUR SOLE AND EXCLUSIVE REMEDY FOR ANY DISPUTE WITH STUDIO FREQUENCE INC IS TO STOP USING THE SERVICES AND TO CANCEL YOUR ACCOUNT IF YOU HAVE ONE.<br/>
+										You may have additional legal rights in your jurisdiction and under applicable law, and nothing in these Terms of Service will prejudice such rights that you may have as a user of the Services.</li>
+									</ul>
+								</ul>							
+
+								<li id="Indemnity">Indemnity</li>
+								<ul> 
+									<ul>
+										<li>You agree to indemnify, defend and hold Studio Frequence Inc harmless from and against any and all claims, liabilities, damages, losses, costs, expenses, fees, resulting from violating any law or breaching this agreement by you. We will use reasonable efforts to notify you of any claim for which you are obligated to indemnify us.</li>
+									</ul>
+								</ul>
+
+								<li id="No_Wavier">No Wavier</li>
+								<ul> 
+									<ul>
+										<li>Your and our actions or inactions will not create any other rights under this Terms of Service, except as expressly stated herein. Our failure to enforce any right or provision of this Terms of Service shall not be deemed to be a waiver of such right or provision.</li>
+									</ul>
+								</ul>
+								
+								<li id="Severability">Severability</li>
+								<ul> 
+									<ul>
+										<li>If any provision of this agreement is found to be invalid or unenforceable under applicable law, it shall be regarded as removed to the extent of its unenforceability and invalidity while all other terms will remain in full force and effect.</li>
+									</ul>
+								</ul>
+								
 							</article>
 
 						<!-- ParentsGuide -->
 							<article id="ParentsGuide">
 								<h2 class="major">Parents Guide</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<span class="image main"><img src="images/img4.png" alt="" /></span>
+								<p></p>
 							</article>
 
 					</div>
@@ -463,9 +768,21 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script>
+<script type="text/javascript">
+new LazyLoad({ elements_selector: `.lazy`});
 var scene = $('#scene').get(0);
 var parallax = new Parallax(scene);
+var load = document.getElementById("loading");
+function loading() 
+{
+	var num = Math.floor( Math.random() * 133) + 1;
+	document.getElementById('randImage').src =  ('images2/img' + num + '.png');
+	var num2 = Math.floor( Math.random() * 133) + 1;
+	document.getElementById('randImage2').src =  ('images2/img' + num2 + '.png');
+	document.getElementById('randImage2').width =  "130";
+	document.getElementById('randImage2').height = "60";
+	load.style.display = 'none';
+}
 </script>
 </body>
 </html>
